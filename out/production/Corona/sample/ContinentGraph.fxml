@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="735.0" prefWidth="1286.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ContinentGraph">
+   <children>
+      <StackedBarChart fx:id="stackedBarChart" layoutX="-1.0" layoutY="53.0" prefHeight="682.0" prefWidth="1270.0" title="Daily Cases">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </StackedBarChart>
+      <Button layoutX="51.0" layoutY="14.0" mnemonicParsing="false" onAction="#GoBackTableView" text="Go Back TableView" />
+      <Button layoutX="258.0" layoutY="14.0" mnemonicParsing="false" onAction="#GoBackDailyDeathsGraph" text="Go Daily Deaths Graph" />
+   </children>
+</AnchorPane>

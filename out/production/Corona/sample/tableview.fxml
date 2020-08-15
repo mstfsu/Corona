@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1038.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Tableview">
+   <children>
+      <TableView fx:id="table_info" layoutX="1.0" layoutY="56.0" prefHeight="644.0" prefWidth="1038.0">
+        <columns>
+          <TableColumn fx:id="country_name" prefWidth="125.0" text="Country" />
+          <TableColumn fx:id="total_cases" prefWidth="125.0" text="TotalCases" />
+            <TableColumn fx:id="new_cases" prefWidth="125.0" text="NewCases" />
+            <TableColumn fx:id="total_deaths" prefWidth="120.60003662109375" text="TotalDeaths" />
+            <TableColumn fx:id="new_deaths" prefWidth="130.5999755859375" text="NewDeaths" />
+            <TableColumn fx:id="populations" prefWidth="125.0" text="Population" />
+            <TableColumn fx:id="mortality" prefWidth="125.0" text="Mortality" />
+            <TableColumn fx:id="attack_rate" prefWidth="125.0" text="Attack Rate" />
+
+
+        </columns>
+      </TableView>
+      <Button layoutX="26.0" layoutY="2.0" mnemonicParsing="false" onAction="#goLineChart" text="Line Chart" />
+      <Button layoutX="171.0" layoutY="2.0" mnemonicParsing="false" onAction="#goContinentChart" text="Continent Graphs" />
+   </children>
+</Pane>

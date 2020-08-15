@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="700.0" prefWidth="2000.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LineChartDeaths">
+    <children>
+        <LineChart fx:id="lineChart" layoutX="-10.0" layoutY="61.0" prefHeight="562.0" prefWidth="1500.0" title="Total Deaths Graph" titleSide="BOTTOM">
+            <xAxis>
+                <CategoryAxis side="BOTTOM" />
+            </xAxis>
+            <yAxis>
+                <NumberAxis side="LEFT" />
+            </yAxis>
+        </LineChart>
+        <ListView fx:id="listView" layoutX="1500.0" layoutY="3.0" prefHeight="569.0" prefWidth="186.0" />
+        <Button layoutX="1515.0" layoutY="585.0" mnemonicParsing="false" onAction="#UpdateCountryName" prefHeight="38.0" prefWidth="163.0" text="Show in Graph" />
+        <Button layoutX="288.0" layoutY="25.0" mnemonicParsing="false" onAction="#GoBackTableView" prefHeight="38.0" prefWidth="155.0" text="Go Back TableView" />
+        <Label layoutX="1078.0" layoutY="14.0" prefHeight="30.0" prefWidth="374.0" text="If more than one country will be selected, press CTRL." />
+      <Button layoutX="559.0" layoutY="25.0" mnemonicParsing="false" onAction="#goLineChart" prefHeight="38.0" prefWidth="302.0" text="Go Total Case Line Graph" />
+    </children>
+</AnchorPane>
